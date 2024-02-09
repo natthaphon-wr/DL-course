@@ -86,7 +86,7 @@ learn <- function(alpha, lambda, sampling){
     geom_line() +
     labs(x="Iteration", y="Loss", title="Virginica")
   
-  plot_grid(se_plt, ver_plt, vir_plt)
+  plot_grid(se_plt, ver_plt, vir_plt, nrow=3, ncol=1)
 }
 
 alpha = 0.2    #learning rate
@@ -101,6 +101,4 @@ learn(alpha, lambda=0, sampling=0.5)
 learn(alpha, lambda=0, sampling=0.75)
 learn(alpha, lambda=0, sampling=1)
 
-learn(alpha, lambda=0.5, sampling=0.25)
-learn(alpha, lambda=0.5, sampling=0.25)
 learn(alpha, lambda=0.5, sampling=0.25)
